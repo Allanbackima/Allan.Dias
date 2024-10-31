@@ -7,128 +7,108 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #4B5320;
-            color: #FFFFFF;
+            background-image: url('file-DGOBMRk2CxJjwPpRm5tlMI2Y');
+            background-size: cover;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #3B3F41;
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             text-align: center;
         }
         header h1 {
-            color: #D1B796;
+            color: #fff;
             font-size: 3em;
-            font-family: 'Courier New', monospace;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            background-color: #2F3233;
-        }
-        nav a {
-            color: #D1B796;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
         }
         .section {
-            margin: 20px 0;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: #f2f2f2;
+            width: 30%;
+            margin: 15px;
             padding: 20px;
-            background-color: #484B4C;
             border-radius: 8px;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
-        .product-item {
-            background-color: #3B3F41;
-            padding: 10px;
-            border-radius: 5px;
             text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .product h3 {
+            margin-top: 0;
+        }
+        .product p {
+            font-size: 1.2em;
+            color: #555;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #2A2C2B;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Lost Word</h1>
-        <p>Camisetas personalizadas com estilo e propósito</p>
+        <p>Camisetas Personalizadas para Você</p>
     </header>
 
-    <nav>
-        <a href="#historia">Nossa História</a>
-        <a href="#proposito">Propósito</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#contato">Contato</a>
-    </nav>
+    <div class="section">
+        <h2>Sobre Nós</h2>
+        <p>Lost Word nasceu do desejo de oferecer camisetas que expressam personalidade e estilo único. Nossas peças são feitas para quem deseja vestir mais do que apenas uma roupa, mas uma ideia, uma atitude. Nossa missão é transformar cada peça em um reflexo de quem você é.</p>
+    </div>
 
-    <div class="container">
-        <section id="historia" class="section">
-            <h2>Nossa História</h2>
-            <p>A Lost Word foi criada com a ideia de representar as palavras não ditas e os sentimentos que merecem ser expressos. Nossa loja é fruto de uma paixão pela autenticidade e pelo estilo único que cada pessoa carrega.</p>
-        </section>
+    <div class="section">
+        <h2>Propósito da Loja</h2>
+        <p>Nossa loja tem como propósito fornecer qualidade e autenticidade em cada camiseta, promovendo uma moda consciente e personalizada para cada cliente. Queremos que você encontre aqui não só uma peça de roupa, mas uma expressão de quem você é.</p>
+    </div>
 
-        <section id="proposito" class="section">
-            <h2>Nosso Propósito</h2>
-            <p>Nosso propósito é inspirar e empoderar as pessoas por meio de camisetas que contam histórias e representam personalidade. Valorizamos a individualidade e a expressão através de designs únicos, conectando você ao que realmente importa.</p>
-        </section>
-
-        <section id="produtos" class="section">
-            <h2>Nossos Produtos</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <h3>Camiseta Curta 1</h3>
-                    <p>Preço: R$29,90 + frete</p>
-                </div>
-                <div class="product-item">
-                    <h3>Camiseta Curta 2</h3>
-                    <p>Preço: R$29,90 + frete</p>
-                </div>
-                <div class="product-item">
-                    <h3>Camiseta Curta 3</h3>
-                    <p>Preço: R$29,90 + frete</p>
-                </div>
-                <div class="product-item">
-                    <h3>Regata 1</h3>
-                    <p>Preço: R$29,90 + frete</p>
-                </div>
-                <div class="product-item">
-                    <h3>Regata 2</h3>
-                    <p>Preço: R$29,90 + frete</p>
-                </div>
-                <div class="product-item">
-                    <h3>Regata 3</h3>
-                    <p>Preço: R$29,90 + frete</p>
-                </div>
+    <div class="section">
+        <h2>Produtos</h2>
+        <div class="products">
+            <!-- Camisetas Curtas -->
+            <div class="product">
+                <h3>Camiseta Curta 1</h3>
+                <p>R$ 29,90 + Frete</p>
             </div>
-        </section>
+            <div class="product">
+                <h3>Camiseta Curta 2</h3>
+                <p>R$ 29,90 + Frete</p>
+            </div>
+            <div class="product">
+                <h3>Camiseta Curta 3</h3>
+                <p>R$ 29,90 + Frete</p>
+            </div>
 
-        <section id="contato" class="section">
-            <h2>Entre em Contato</h2>
-            <p>Para saber mais sobre nossos produtos ou personalizar uma camiseta, entre em contato conosco:</p>
-            <ul>
-                <li>Email: contato@lostword.com</li>
-                <li>Telefone: (XX) XXXX-XXXX</li>
-            </ul>
-        </section>
+            <!-- Camisetas Regatas -->
+            <div class="product">
+                <h3>Camiseta Regata 1</h3>
+                <p>R$ 29,90 + Frete</p>
+            </div>
+            <div class="product">
+                <h3>Camiseta Regata 2</h3>
+                <p>R$ 29,90 + Frete</p>
+            </div>
+            <div class="product">
+                <h3>Camiseta Regata 3</h3>
+                <p>R$ 29,90 + Frete</p>
+            </div>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2024 Lost Word. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
